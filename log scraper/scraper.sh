@@ -11,7 +11,7 @@ RETURNnon200=0
 REPORTPUT=0
 
 # temp file for IP list
-IPLIST=/tmp/ips
+IPLIST=/tmp/ips$$
 touch $IPLIST
 
 cat $LOG | tr -d \" | {
