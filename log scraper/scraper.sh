@@ -12,7 +12,7 @@ REPORTPUT=0
 
 # temp file for IP list
 IPLIST=/tmp/ips$$
-touch $IPLIST
+cp /dev/null $IPLIST
 
 cat $LOG | tr -d \" | {
         while read ip a b date time op stub prot return eol
